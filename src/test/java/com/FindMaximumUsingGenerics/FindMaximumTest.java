@@ -69,5 +69,4 @@ public class FindMaximumTest {
 		String result = findMax.findMax("Apple", "Banana", "Peach");
 		Assert.assertEquals("Peach", result);
 	}
-
 }
