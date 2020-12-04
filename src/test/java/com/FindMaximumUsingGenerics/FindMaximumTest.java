@@ -25,5 +25,26 @@ public class FindMaximumTest {
 		Integer result = findMax.findMax(5, 3, 9);
 		Assert.assertSame(9, result);
 	}
+	@Test
+	public void givenFloatMaxNumberAtFirstPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		Float result = findMax.findMax(9.0f, 3.0f, 5.0f);
+		System.out.println(result);
+		Assert.assertEquals(9.0, result);
+	}
+	
+	@Test
+	public void givenFloatMaxNumberAtSeondPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		float result = findMax.findMax(3.0f, 9.0f, 5.0f);
+		Assert.assertEquals(9.0, result);
+	}
+	
+	@Test
+	public void givenFloatMaxNumberAtThirdPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		Float result = findMax.findMax(5.0f, 3.0f, 9.0f);
+		Assert.assertEquals(9.0, result);
+	}
 
 }
