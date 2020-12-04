@@ -25,4 +25,5 @@ public class FindMaximumTest {
 		Integer result = findMax.findMax(5, 3, 9);
 		Assert.assertSame(9, result);
 	}
+
 }

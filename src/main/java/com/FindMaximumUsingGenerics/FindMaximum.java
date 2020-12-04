@@ -9,5 +9,4 @@ public class FindMaximum {
 			max = thrid;
 		return max;
 	}
-
 }
