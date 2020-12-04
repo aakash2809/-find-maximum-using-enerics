@@ -1,12 +1,14 @@
 package com.FindMaximumUsingGenerics;
 
-import static org.junit.Assert.fail;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FindMaximumTest {
-	@Test
-	public void test() {
-		fail("not implemeted yet !");
-	}
 
+	@Test
+	public void givenMaxNumberAtFirstPostion_ReturnMaximumValue() {
+		FindMaximum findMax = new FindMaximum();
+		Integer result = findMax.findMax(9, 3, 5);
+		Assert.assertSame(9, result);
+	}
 }
